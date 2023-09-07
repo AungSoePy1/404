@@ -9,11 +9,20 @@ plain='\033[0m'
 # if [[ -n $1 ]] && [[ $2 == e2-* ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $8 ]] && [[ $(($(date +%s) - $8)) -lt 120 ]] && [[ $(($(date +%s) - $8)) -ge 0 ]]; then
 #if [[ -n cluster-404-m ]] && [[ $2 == e2-standard-4 ]] && [[ -n asia-southeast1-b ]] && [[ -n firewall ]] && [[ -n 404 ]] && [[ $(($(date +%s) - 404)) -lt 120 ]] && [[ $(($(date +%s) - 404)) -ge 0 ]]; then
 
+echo -e "${yellow}Creating auth list ...${plain}"
+gcloud auth list
+
+echo -e "${yellow}Creating config list project ...${plain}"
+gcloud config list project
+
+echo -e "${yellow}Creating git clone ...${plain}"
+git clone https://github.com/googlecodelabs/orchestrate-with-kubernetes.git
+
 echo -e "${yellow}Creating Region ...${plain}"
 gcloud config set compute/zone asia-east1-b
 
 echo -e "${yellow}Creating instance ...${plain}"
-instance=$(gcloud container clusters create bootcamp --image-type "UBUNTU_CONTAINERD" --num-nodes 1 --scopes "https://www.googleapis.com/auth/projecthosting,storage-rw")
+instance=$(gcloud container clusters create bootcamp --image-type "UBUNTU_CONTAINERD" --num-nodes 5 --scopes "https://www.googleapis.com/auth/projecthosting,storage-rw")
 echo -e "${green}Instance created.${plain}"
 
 echo -e "${yellow}Checking firewall rule ...${plain}"
@@ -27,8 +36,8 @@ fi
 
 echo -e "\n${red}GCP TAIWAN SERVER 🇹🇼 ${plain}\n"
 
- # echo -e "Username: ${green}$5${plain}, Password: ${green}$6${plain}, SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
-echo -e "SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
+#echo -e "Username: ${green}$5${plain}, Password: ${green}$6${plain}, SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
+#echo -e "SSH Host :  ${green}$(grep -oP '(?<=EXTERNAL_IP: ).*' <<<"$instance")${plain}"
 echo ""
 echo "------------------------------------"
 printf "  Proudly developed the script by  \n"
