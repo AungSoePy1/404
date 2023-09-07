@@ -2,25 +2,6 @@
 ## ◇────── SCRIPT MANAGER ───────◇
 
 
-# ___   ___          ________          ___   ___     
-#|\  \ |\  \        |\   __  \        |\  \ |\  \    
-#\ \  \\_\  \       \ \  \|\  \       \ \  \\_\  \   
-# \ \______  \       \ \  \\\  \       \ \______  \  
-#  \|_____|\  \       \ \  \\\  \       \|_____|\  \ 
-#         \ \__\       \ \_______\             \ \__\
-#          \|__|        \|_______|              \|__|
-                                                    
-
-## ㅤ
-
-___Update System Packages and Install SCRIPT___
-
-```
-apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/NyeinKoKo/DRAGON-VPS-MANAGER/main/hehe; chmod 777 hehe;./hehe
-
-```
-
-
 ## ㅤ
 
 ___Based on___
