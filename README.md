@@ -8,10 +8,8 @@ ___Based on___
 
  <p>    
 <div class="div1">
-  <span><a href=""><img src="https://github.com/januda-ui/januda-ui/blob/main/icons/icons8-linux.gif?raw=true" alt=""width="50"height="50"/></a></span>
   <span><a href=""><img src="https://github.com/januda-ui/januda-ui/blob/main/icons/icons8-internet.gif?raw=true" alt=""width="50"height="50"/></a></span>
   <span><a href=""><img src="https://github.com/januda-ui/januda-ui/blob/main/icons/ubuntu.gif?raw=true" alt=""width="50"height="50"/></a></span>
-  <span><a href=""><img src="https://github.com/januda-ui/januda-ui/blob/main/icons/icons8-ssh-48.png?raw=true" alt=""width="50"height="50"/></a></span>
   <span><a href=""><img src="https://github.com/januda-ui/januda-ui/blob/main/icons/terminal2.gif?raw=true" alt=""width="50"height="50"/></a></span>
 </div>
  </p>
