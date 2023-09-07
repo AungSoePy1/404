@@ -2,10 +2,16 @@
 ## ◇────── SCRIPT MANAGER ───────◇
 
 ㅤ
-<p align="left">
-  <a href="" rel="noopener">
- <img width=550px height=550px src="https://github.com/NyeinKoKoAung/404/blob/main/FB_IMG_1693868761648.jpg?raw=true?raw=true" alt="logo"></a>
-</p>
+ ___   ___          ________          ___   ___     
+|\  \ |\  \        |\   __  \        |\  \ |\  \    
+\ \  \\_\  \       \ \  \|\  \       \ \  \\_\  \   
+ \ \______  \       \ \  \\\  \       \ \______  \  
+  \|_____|\  \       \ \  \\\  \       \|_____|\  \ 
+         \ \__\       \ \_______\             \ \__\
+          \|__|        \|_______|              \|__|
+                                                    
+                                                    
+                                                    
 
 ## ㅤ
 
