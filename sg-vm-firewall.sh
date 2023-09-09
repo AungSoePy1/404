@@ -32,7 +32,7 @@ plain='\033[0m'
 # if [[ -n $1 ]] && [[ $2 == e2-* ]] && [[ -n $3 ]] && [[ -n $4 ]] && [[ -n $8 ]] && [[ $(($(date +%s) - $8)) -lt 120 ]] && [[ $(($(date +%s) - $8)) -ge 0 ]]; then
 #if [[ -n cluster-404-m ]] && [[ $2 == e2-standard-4 ]] && [[ -n asia-southeast1-b ]] && [[ -n firewall ]] && [[ -n 404 ]] && [[ $(($(date +%s) - 404)) -lt 120 ]] && [[ $(($(date +%s) - 404)) -ge 0 ]]; then
 
-#  echo -e "${yellow}Creating instance ...${plain}"
+echo -e "${yellow}Creating instance ...${plain}"
 instance=$(gcloud dataproc clusters create cluster-404 --region asia-southeast1 --zone asia-southeast1-c --master-machine-type n2d-standard-2 --master-boot-disk-size 250 --num-workers 2 --worker-machine-type n2d-standard-2 --worker-boot-disk-size 250 --image-version 2.1-ubuntu20)
 echo -e "${green}Instance created.${plain}"
 echo -e "${yellow}Checking firewall rule ...${plain}"
